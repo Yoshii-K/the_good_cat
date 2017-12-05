@@ -34,9 +34,12 @@ ul > li > a, ul > li > ul > li > a {
     -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
     -o-transition: all 0.3s 0.01s ease;
     -webkit-transition: all 0.3s 0.01s ease;
+    
+    transition: background 0.5s;
 }
 a:hover {
     background:#D43737;/*добавляем эффект при наведении*/
+    /*height: 100px;*/
 }
 
 a:focus {
@@ -56,12 +59,15 @@ ul > li, ul > li > ul > li {
 li > ul {
     position:absolute;
     top:25px;
-    display:none;   
+    /*display:none;*/
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 
 /*Делаем скрытую часть видимой*/
 li:hover > ul {
-    display:block; 
+    /*display:block;*/
+    opacity: 1;
     width:250px;  /*Задаем ширину выпадающего меню*/      
 }
 li:hover > ul > li {
