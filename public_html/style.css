@@ -1,0 +1,70 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05.12.2017, 10:00:24
+    Author     : Korobov_A
+*/
+
+#main_menu {
+    display: flex;
+    justify-content: center;
+}
+
+#main_menu, #sub_menu {
+    list-style: none; /*убираем маркеры списка*/
+    margin: 0; /*убираем отступы*/
+    padding-left: 0; /*убираем отступы*/
+    margin-top:25px; /*делаем отступ сверху*/
+    background:#819A32; /*добавляем фон всему меню*/
+    height: 50px; /*задаем высоту*/
+}
+ul > li > a, ul > li > ul > li > a {
+    text-decoration: none; /*убираем подчеркивание текста ссылок*/
+    background:#819A32; /*добавляем фон к пункту меню*/
+    color:#fff; /*меняем цвет ссылок*/
+    padding:0px 15px; /*добавляем отступ*/
+    font-family: 'Comic Sans MS'; /*меняем шрифт*/
+    font-size: 20px;
+    line-height:50px; /*ровняем меню по вертикали*/
+    display: block; 
+    border-right: 1px solid #677B27; /*добавляем бордюр справа*/
+    -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+    -o-transition: all 0.3s 0.01s ease;
+    -webkit-transition: all 0.3s 0.01s ease;
+}
+a:hover {
+    background:#D43737;/*добавляем эффект при наведении*/
+}
+
+a:focus {
+    background:#D43737;/*добавляем эффект при наведении*/
+}
+
+/* ul > li > ul > li > a:focus {
+    background:#D43737;добавляем эффект при наведении
+}*/
+
+ul > li, ul > li > ul > li {
+    float: left; /*Размещаем список горизонтально для реализации меню*/
+    position: relative; /*задаем позицию для позиционирования*/
+}
+
+/*Стили для скрытого выпадающего меню*/
+li > ul {
+    position:absolute;
+    top:25px;
+    display:none;   
+}
+
+/*Делаем скрытую часть видимой*/
+li:hover > ul {
+    display:block; 
+    width:250px;  /*Задаем ширину выпадающего меню*/      
+}
+li:hover > ul > li {
+    float:none; /*Убираем горизонтальное позиционирование*/
+}
+
