@@ -1,0 +1,8 @@
+{
+    "name": "the_good_cat",
+    "version": "1.0.0",
+    "keywords": ["util", "functional", "server", "client", "browser"],
+    "author": "Korobov_A",
+    "contributors": [],
+    "dependencies": {}
+}
