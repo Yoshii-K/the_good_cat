@@ -13,7 +13,7 @@ and open the template in the editor.
     justify-content: center;
 }
 
-#main_menu, #sub_menu {
+#main_menu, .sub_menu {
     list-style: none; /*убираем маркеры списка*/
     margin: 0; /*убираем отступы*/
     padding-left: 0; /*убираем отступы*/
@@ -21,7 +21,8 @@ and open the template in the editor.
     background:#819A32; /*добавляем фон всему меню*/
     height: 50px; /*задаем высоту*/
 }
-ul > li > a, ul > li > ul > li > a {
+
+nav a {
     text-decoration: none; /*убираем подчеркивание текста ссылок*/
     background:#819A32; /*добавляем фон к пункту меню*/
     color:#fff; /*меняем цвет ссылок*/
@@ -34,34 +35,25 @@ ul > li > a, ul > li > ul > li > a {
     -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
     -o-transition: all 0.3s 0.01s ease;
     -webkit-transition: all 0.3s 0.01s ease;
-    
-    transition: background 1s;
+    transition: background 0.5s;
 }
+
 a:hover {
     background:#D43737;/*добавляем эффект при наведении*/
-    /*height: 100px;*/
 }
 
 a:focus {
-    background:#D43737;/*добавляем эффект при наведении*/
+    background:#D43737;/*добавляем эффект при клике*/
 }
 
-/* ul > li > ul > li > a:focus {
-    background:#D43737;добавляем эффект при наведении
-}*/
-
-ul > li, ul > li > ul > li {
-    /*float: left;*/ 
-    /*Размещаем список горизонтально для реализации меню*/
-    position: relative; /*задаем позицию для позиционирования*/
-    
+nav li {
+    position: relative; /*задаем позицию для позиционирования*/ 
 }
 
 /*Стили для скрытого выпадающего меню*/
 li > ul {
     position:absolute;
     top:25px;
-    /*display:none;*/
     width:250px;
     opacity: 0;
     transition: opacity 1s;
@@ -69,14 +61,11 @@ li > ul {
 
 /*Делаем скрытую часть видимой*/
 li:hover > ul {
-    /*display:block;*/
     opacity: 1;
-    height: 50px;
     width:250px; 
-    /*Задаем ширину выпадающего меню*/      
 }
+
 li:hover > ul > li {
-    float:none;
-    /*Убираем горизонтальное позиционирование*/
+    float:none; /*Убираем горизонтальное позиционирование*/
 }
 
