@@ -154,3 +154,40 @@ li:hover > ul > li {
 /*******************************************************/
 /******************Окончание адаптивки *****************/
 /*******************************************************/
+
+/*******************************************************/
+/**************** Начало описания подвала **************/
+/*******************************************************/
+
+#main_footer {
+    display: flex;
+    justify-content: flex-start;
+    background:#819A32;
+    border: 3px solid wheat;
+}
+
+#social {
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+    background:#819A32;
+    border-right: 3px solid wheat;
+}
+
+#line_one {
+    display: flex;
+    justify-content:space-around;
+    background:#819A32;
+}
+
+#line_two {
+    display: flex;
+    justify-content:flex-start;
+    background:#819A32;
+}
+
+.soc_img {margin: 5px;}
+
+/*******************************************************/
+/************** Окончание описания подвала *************/
+/*******************************************************/
