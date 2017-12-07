@@ -186,7 +186,22 @@ li:hover > ul > li {
     background:#819A32;
 }
 
-.soc_img {margin: 5px;}
+.soc_img {
+    margin: 5px;
+    animation: sc 1s;
+}
+
+@keyframes sc {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 
 /*******************************************************/
 /************** Окончание описания подвала *************/
