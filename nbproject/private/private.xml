@@ -3,12 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/web/the_good_cat/the_good_cat/.bowerrc</file>
-            <file>file:/D:/web/the_good_cat/the_good_cat/package.json</file>
-            <file>file:/D:/web/the_good_cat/the_good_cat/bower.json</file>
-            <file>file:/D:/web/the_good_cat/the_good_cat/Gruntfile.js</file>
-            <file>file:/D:/web/the_good_cat/the_good_cat/public_html/index.html</file>
-            <file>file:/D:/web/the_good_cat/the_good_cat/gulpfile.js</file>
+            <file>file:/D:/web/the_good_cat/public_html/index.html</file>
+            <file>file:/D:/web/the_good_cat/public_html/style.css</file>
+            <file>file:/D:/web/the_good_cat/public_html/magnific-popup.css</file>
         </group>
     </open-files>
 </project-private>
