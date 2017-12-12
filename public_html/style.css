@@ -19,23 +19,33 @@ http://www.templatemo.com/tm-501-neaty
 }
 
 .tm-nav-item {
-    border: red solid 1px;
+    border-top: #f4ef5e solid 1px;
+    border-left: #f4ef5e solid 1px;
+    border-right: #f4ef5e solid 1px;
+    position: relative;
+}
+
+.tm-nav-item:last-child {
+    border-bottom: #f4ef5e solid 1px;
+    border-left: #f4ef5e solid 1px;
+    border-right: #f4ef5e solid 1px;
+    position: relative;
 }
 
 .sub-tm-main-nav-ul {
     position: absolute;
-    bottom: 29px;
-    right: -15px;
+    top: -1px;
+    left: 125px;
     opacity: 0;
     transition: 0.5s linear opacity;
 }
 
-.tm-nav-item:hover a, .tm-nav-item:active a, .tm-nav-item:focus a, .tm-nav-item-link.active {
+/*.tm-nav-item:hover a, .tm-nav-item:active a, .tm-nav-item:focus a, .tm-nav-item-link.active {
     color: #f4ef5e;opacity: 1;
-}
+}*/
 
-.tm-nav-item:hover ul { /* Выводим выпадающий пункт при наведении курсора */
-    opacity:1; /* Делаем непрозрачным */
+.tm-nav-item:hover ul { 
+    opacity: 1;
 }
 
 /* It is mine */
