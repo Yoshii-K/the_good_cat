@@ -19,7 +19,23 @@ http://www.templatemo.com/tm-501-neaty
 }
 
 .tm-nav-item {
-    border: red solid 3px;
+    border: red solid 1px;
+}
+
+.sub-tm-main-nav-ul {
+    position: absolute;
+    bottom: 29px;
+    right: -15px;
+    opacity: 0;
+    transition: 0.5s linear opacity;
+}
+
+.tm-nav-item:hover a, .tm-nav-item:active a, .tm-nav-item:focus a, .tm-nav-item-link.active {
+    color: #f4ef5e;opacity: 1;
+}
+
+.tm-nav-item:hover ul { /* Выводим выпадающий пункт при наведении курсора */
+    opacity:1; /* Делаем непрозрачным */
 }
 
 /* It is mine */
@@ -196,7 +212,7 @@ textarea:-ms-input-placeholder {
 		font-size: 1.5rem;
 		list-style: none;
 		/*padding: 18px 30px;*/
-                padding: 3px 5px;
+                padding: 5px 7px;
 		transition: all 0.3s ease;
 	}
 
