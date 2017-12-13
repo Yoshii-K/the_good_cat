@@ -22,6 +22,7 @@ http://www.templatemo.com/tm-501-neaty
     border-top: #f4ef5e solid 1px;
     border-left: #f4ef5e solid 1px;
     border-right: #f4ef5e solid 1px;
+    box-sizing: border-box;
     position: relative;
 }
 
@@ -29,6 +30,7 @@ http://www.templatemo.com/tm-501-neaty
     border-bottom: #f4ef5e solid 1px;
     border-left: #f4ef5e solid 1px;
     border-right: #f4ef5e solid 1px;
+    box-sizing: border-box;
     position: relative;
 }
 
@@ -37,15 +39,55 @@ http://www.templatemo.com/tm-501-neaty
     top: -1%;
     left: 100%;
     padding: 0;
-    opacity: 0;
-    transition: 0.5s linear opacity;
+/*    opacity: 0;
+    transition: 0.5s linear opacity;*/
+}
+
+.sub-tm-main-nav-ul li {
+/*    opacity: 0;
+    transition: 0.5s linear opacity;*/
+    width: 0;
+    padding-left: 0; 
+    padding-right: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 0;
+    
+    transition: 0.5s linear width, 0.5s linear padding-left, 0.5s linear padding-right, 0.7s linear border;
+    overflow: hidden;
+}
+
+.sub-tm-main-nav-ul li:last-child {
+    border: 0;  
 }
 
 img {border: #f4ef5e solid 1px;}
 
-.tm-nav-item:hover ul { 
-    opacity: 1;
+.tm-nav-item:hover ul li { 
+    /*opacity: 1;*/
+    width: 100%;
+    padding-left: 7px; 
+    padding-right: 7px;
+    border-top: #f4ef5e solid 1px;
+    border-left: #f4ef5e solid 1px;
+    border-right: #f4ef5e solid 1px;
+    box-sizing: border-box;
 }
+
+.tm-nav-item:hover ul li:last-child { 
+    border-bottom: #f4ef5e solid 1px;
+    border-left: #f4ef5e solid 1px;
+    border-right: #f4ef5e solid 1px;
+    box-sizing: border-box;
+}
+
+.tm-nav-item > a:hover, .tm-nav-item > a:focus {
+    color: #f4ef5e;
+}
+
+/*.tm-nav-item:hover a, .tm-nav-item:active a, .tm-nav-item:focus a, .tm-nav-item-link.active {
+    color: #f4ef5e;
+}*/
 
 /* It is mine */
 
@@ -119,9 +161,9 @@ p { line-height: 2; }
 	color: white;
 }
 
-.tm-nav-item:hover a, .tm-nav-item:active a, .tm-nav-item:focus a, .tm-nav-item-link.active {
+/*.tm-nav-item:hover a, .tm-nav-item:active a, .tm-nav-item:focus a, .tm-nav-item-link.active {
     color: #f4ef5e;
-}
+}*/
 
 .tm-about-img-container { margin-top: 50px; }
 
