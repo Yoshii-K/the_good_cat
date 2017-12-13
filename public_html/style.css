@@ -34,18 +34,14 @@ http://www.templatemo.com/tm-501-neaty
 
 .sub-tm-main-nav-ul {
     position: absolute;
-    top: -1px;
-    left: 125px;
+    top: -1%;
+    left: 100%;
+    padding: 0;
     opacity: 0;
     transition: 0.5s linear opacity;
 }
 
 img {border: #f4ef5e solid 1px;}
-
-
-/*.tm-nav-item:hover a, .tm-nav-item:active a, .tm-nav-item:focus a, .tm-nav-item-link.active {
-    color: #f4ef5e;opacity: 1;
-}*/
 
 .tm-nav-item:hover ul { 
     opacity: 1;
