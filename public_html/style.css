@@ -15,7 +15,7 @@ http://www.templatemo.com/tm-501-neaty
 }
 
 #main-fone {
-    border: white solid 3px;
+    border: #f4ef5e solid 3px;
 }
 
 .tm-nav-item {
@@ -61,7 +61,7 @@ http://www.templatemo.com/tm-501-neaty
     border: 0;  
 }
 
-img {border: #f4ef5e solid 1px;}
+/*img {border: #f4ef5e solid 1px;}*/
 
 .tm-nav-item:hover ul li { 
     /*opacity: 1;*/
@@ -81,7 +81,11 @@ img {border: #f4ef5e solid 1px;}
     box-sizing: border-box;
 }
 
-.tm-nav-item > a:hover, .tm-nav-item > a:focus {
+/*.tm-nav-item > a:hover, .tm-nav-item > a:focus {
+    color: #f4ef5e;
+}*/
+
+.tm-nav-item:hover > a, .tm-nav-item > a:focus {
     color: #f4ef5e;
 }
 
