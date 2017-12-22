@@ -15,7 +15,7 @@ and open the template in the editor.
         <link rel="stylesheet" href="sales_gallery/sg_css3_3d.css" media="screen" /> 
 
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script> 
-        <script type="text/javascript" src="js/modernizr.js"></script> 
+        <!--<script type="text/javascript" src="js/modernizr.js"></script>--> 
 
         <script>
 
@@ -26,6 +26,46 @@ and open the template in the editor.
             }
 
         </script> 
+        
+        <script>
+            function countRabbits() {
+                var el1 = document.getElementById('uno');
+                el1.style['display'] = 'none';
+                
+                var el2 = document.getElementById('info1');
+                el2.style['width']         = '100%'; 
+                el2.style['height']        = '100%'; 
+                el2.style['opacity']       = '1'; 
+                el2.style['z-index']       = '10'; 
+                el2.style['position']      = 'fixed'; 
+                el2.style['overflow-x']    = 'hidden'; 
+                el2.style['margin-bottom'] = '25px';
+                
+                var el3 = document.getElementById('dos');
+                el3.style['position']    = 'relative'; 
+                el3.style['margin']      = '0 auto'; 
+                el3.style['top']         = '10%';        
+                el3.style['background']  = '#006599'; 
+                el3.style['width']       = '40%'; 
+                el3.style['padding']     = '2%';
+                el3.style['border']      = '#3BA4C7 solid 3px';
+                el3.style['font-family'] = 'comic sans ms';
+                el3.style['color']       = 'white';
+                el3.style['box-shadow']  = '0 1px 8px #000';
+                
+                /*el1.style['background']    = '#000'; 
+                el1.style['position']      = 'absolute'; 
+                el1.style['top']           = '-10px'; 
+                el1.style['left']          = '-10px'; 
+                el1.style['line-height']   = '0'; 
+                el1.style['color']         = '#fff'; 
+                el1.style['text-align']    = 'center'; 
+                el1.style['font-weight']   = 'bold'; 
+                el1.style['border']        = '2px solid #fff'; 
+                el1.style['padding']       = '12px 9px 9px'; 
+                el1.style['border-radius'] = '30px';*/
+            }
+        </script>
 
     </head> 
 
@@ -133,18 +173,19 @@ and open the template in the editor.
                
             <ul id="information"> 
                 <li id="info1"> 
-                    <div class="container-div"> 
+                    <div class="container-div" id='uno'> 
                         <h3>Пара кружек (1)</h3>  
                         <img class="full-image" src="img/two/good-cat-01.jpg" />
                         <div class="price">
                             <div class="price-caption">Цена: 1000 рублей (с учетом НДС)</div>
-                            <a href="#" class="button-basket"/>В корзину</a>
+                            <!--<a href="#" class="button-basket"/>В корзину</a>-->
+                            <input class="button-basket" onclick="countRabbits()" type="button" value="В корзину"/>
                         </div>
                         <p>Это пара кружек. Очень неплохая. Выбери и поймешь почему.</p>
                         <!--<p><a href="#">Посмотреть в хорошем качестве</a></p>--> 
                         <a href="#" class="close">x</a> 
                     </div> 
-                    <span class="backface"></span> 
+                    <span class="backface" id='dos'></span> 
                 </li>
                 <li id="info2"> 
                     <div class="container-div"> 

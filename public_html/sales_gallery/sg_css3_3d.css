@@ -240,7 +240,6 @@ li[id]:target {
     z-index: 10; 
     position: fixed; 
     overflow-x: hidden; 
-    /* overflow-y: scroll; */ 
     margin-bottom: 25px; 
 }
 
@@ -257,17 +256,6 @@ li[id]:target::-webkit-scrollbar-thumb {
 }
 
 li[id]:target .container-div { 
-/*    position: relative; 
-    margin: 0 auto; 
-    top: 15%; background: #fff; 
-    width: 600px; 
-    padding: 30px;
-    -webkit-box-shadow: 0 1px 8px #000;
-    -moz-box-shadow: 0 1px 8px #000;
-    box-shadow: 0 1px 8px #000;
-    -webkit-animation: lightbox 0.75s cubic-bezier(0,0,0,1);
-    -moz-animation: lightbox 0.5s cubic-bezier(0,0,0,1);*/
-
     position: relative; 
     margin: 0 auto; 
     top: 10%; 
@@ -335,7 +323,7 @@ First line is at 0% so we're setting it to be 5x the actual size and rotate it a
 Use Modernizer (http://www.modernizr.com) to display content for browsers that don't support CSS Transforms.
 It now defaults to linking to the ID ie: www.url.com/#info3 and moving to that position on the page.
 ---------------------------------------------------------------------------------------------------------------------------- */
-.no-csstransforms #information li { 
+/*.no-csstransforms #information li { 
     overflow: visible; 
     position: relative; 
     margin: 0 auto; 
@@ -354,7 +342,7 @@ It now defaults to linking to the ID ie: www.url.com/#info3 and moving to that p
     color: #0090e2; 
     font-size: 12px; 
     font-weight: normal; left: 0; top: 0; 
-}	
+}	*/
 
 
 
