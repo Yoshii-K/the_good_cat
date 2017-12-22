@@ -44,6 +44,15 @@ img {
     /*height: auto;*/
 }
 
+.full-image {
+    position: relative;
+    margin: 0 auto;
+}
+
+/*.container-div {
+    border: blueviolet solid 3px;
+    color: red; 
+}*/
 
 /* It is mine */
 
@@ -177,6 +186,11 @@ Rotate every third li with :nth-child(3n) (right hand column in this demo) to th
     letter-spacing: -2px; 
 }
 
+.full-image {
+    max-width: 100%;
+    height: auto;
+}
+
 /* -------------------------------------------------------------------------------------------------------------------------
 Using :target we can style the specific ID of the list item when clicked/tapped on eg: www.url.com/#info1
 ---------------------------------------------------------------------------------------------------------------------------- */
@@ -204,11 +218,26 @@ li[id]:target::-webkit-scrollbar-thumb {
 }
 
 li[id]:target div { 
-    position: relative; 
+/*    position: relative; 
     margin: 0 auto; 
     top: 15%; background: #fff; 
     width: 600px; 
     padding: 30px;
+    -webkit-box-shadow: 0 1px 8px #000;
+    -moz-box-shadow: 0 1px 8px #000;
+    box-shadow: 0 1px 8px #000;
+    -webkit-animation: lightbox 0.75s cubic-bezier(0,0,0,1);
+    -moz-animation: lightbox 0.5s cubic-bezier(0,0,0,1);*/
+
+    position: relative; 
+    margin: 0 auto; 
+    top: 10%; 
+    background: #006599;; 
+    width: 40%; 
+    padding: 2%;
+    border: blueviolet solid 3px;
+    font-family: 'comic sans ms', Helvetica, Arial, sans-serif;
+    color: white;
     -webkit-box-shadow: 0 1px 8px #000;
     -moz-box-shadow: 0 1px 8px #000;
     box-shadow: 0 1px 8px #000;
